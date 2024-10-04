@@ -1,0 +1,24 @@
+<div class="encuesta-container">
+  <div class="header">
+      <button mat-icon-button aria-label="Back" (click)="goToInicio()">
+          <mat-icon>arrow_back</mat-icon>
+      </button>
+      <h2>Encuesta</h2>
+  </div>
+
+  <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Estilo musical</mat-label>
+      <mat-select [(ngModel)]="estiloSeleccionado">
+          <mat-option *ngFor="let estilo of estilosMusicales" [value]="estilo">
+              {{ estilo }}
+          </mat-option>
+      </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input matInput placeholder="Ingresa tu correo" type="email" [(ngModel)]="email" />
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="full-width" (click)="guardarEncuesta()">Guardar</button>
+</div>

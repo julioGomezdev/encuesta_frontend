@@ -1,0 +1,30 @@
+.encuesta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0 230px;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 20px;
+}
